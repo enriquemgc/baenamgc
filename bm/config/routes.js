@@ -31,6 +31,17 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
+  
+  // enriquemgc's views
+  'get /en/angular': { 
+    view: 'enAngular' 
+  },
+  'get /en/polymer': { 
+    view: 'enPolymer' 
+  },
+  'get /en/React': { 
+    view: 'enReact' 
+  },
 
   '/': {
     view: 'homepage'

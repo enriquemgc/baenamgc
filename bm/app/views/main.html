@@ -1,0 +1,31 @@
+<div class="header">
+</div>
+
+<div ng-controller='MainController'>
+  <button ng-click="dbquery()">request query</button>
+
+  <h1>{{foodName}}</h1>
+  <md-list>
+    <md-subheader class="md-no-sticky"></md-subheader>
+    <md-list-item ng-repeat="item in items">
+      <p>{{item.NutrDesc}}</p>
+      <p>{{item.Nutr_Val}}</p>
+      <p>{{item.Units}}</p>
+    <md-divider ng-if="!$last"></md-divider>
+    </md-list-item>
+  </md-list>
+
+<!--   <div>
+    <p>
+      <table>
+        <tr ng-repeat="item in items">
+        <td>{{item.Tagname}}</td> 
+        </tr>
+      </table>
+
+    </p>
+  </div> -->
+
+</div>
+
+

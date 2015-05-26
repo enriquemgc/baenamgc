@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('appApp')
+angular.module('ngApp')
 	.controller('MainController', function ($scope) {
 
 		$scope.testText = "angular works";

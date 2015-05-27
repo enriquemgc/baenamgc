@@ -33,9 +33,7 @@ module.exports.routes = {
   ***************************************************************************/
   
   // enriquemgc's views
-  // 'get /en/angular': { 
-  //   view: 'enAngular' 
-  // },
+  '/': { view: 'assets/ng-app/index.html' },
   // 'get /en/polymer': { 
   //   view: 'enPolymer' 
   // },
@@ -43,9 +41,7 @@ module.exports.routes = {
   //   view: 'enReact' 
   // },
 
-  '/': {
-    view: 'homepage'
-  }
+  // '/': { view: 'homepage' }
 
   /***************************************************************************
   *                                                                          *

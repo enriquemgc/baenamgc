@@ -33,7 +33,10 @@ module.exports.routes = {
   ***************************************************************************/
   
   // enriquemgc's views
-  '/': { view: 'assets/ng-app/index.html' },
+  // main angular layout base 
+  '/ng': function(req, res, next) {
+    res.sendfile(sails.config.appPath + '/assets/ng-app/index.html');
+  }
   // 'get /en/polymer': { 
   //   view: 'enPolymer' 
   // },

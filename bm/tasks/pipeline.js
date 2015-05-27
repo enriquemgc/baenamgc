@@ -15,6 +15,8 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
+  'styles/angular-material.min.css',
+  'styles/main.css',
   'styles/**/*.css'
 ];
 
@@ -27,7 +29,14 @@ var jsFilesToInject = [
   'js/dependencies/sails.io.js',
 
   // Dependencies like jQuery, or Angular are brought in here
-  'js/dependencies/**/*.js',
+  'js/dependencies/jquery.js',
+  'js/dependencies/angular.js',
+  'js/dependencies/angular-resource.js',
+  'js/dependencies/angular-cookies.js',
+  'js/dependencies/angular-sanitize.js',
+  'js/dependencies/angular-route.js',
+  'js/dependencies/angular-material.min.js',
+
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
@@ -60,5 +69,5 @@ module.exports.jsFilesToInject = jsFilesToInject.map(function(path) {
   return '.tmp/public/' + path;
 });
 module.exports.templateFilesToInject = templateFilesToInject.map(function(path) {
-  return 'assets/' + path;
+  return 'assets/ng-app/' + path;
 });

@@ -92,3 +92,8 @@ $RECYCLE.BIN/
 
 # sftp configuration file
 sftp-config.json
+
+# JS App ------------------------------------------
+
+# Dependency directory
+bower_components

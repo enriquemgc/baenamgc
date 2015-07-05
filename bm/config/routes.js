@@ -31,17 +31,17 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
-  
+
   // enriquemgc's views
-  // main angular layout base 
+  // main angular layout base
   '/ng': function(req, res, next) {
     res.sendfile(sails.config.appPath + '/assets/ng-app/index.html');
   }
-  // 'get /en/polymer': { 
-  //   view: 'enPolymer' 
+  // 'get /en/polymer': {
+  //   view: 'enPolymer'
   // },
-  // 'get /en/React': { 
-  //   view: 'enReact' 
+  // 'get /en/React': {
+  //   view: 'enReact'
   // },
 
   // '/': { view: 'homepage' }
